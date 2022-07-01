@@ -8,6 +8,7 @@ cursor.execute('''INSERT INTO Movies (MovieName,Actor,Actress,Year,Director)VALU
 cursor.execute('''INSERT INTO Movies (MovieName,Actor,Actress,Year,Director)VALUES ('Ayan', 'Surya', 'Tamana Bhatia','2009,'K V Anand' )''')
 cursor.execute('''INSERT INTO Movies (MovieName,Actor,Actress,Year,Director)VALUES ('Beast', 'Vijay', 'Pooja Hegde', 2022,'Nelson' )''')
 cursor.execute('''SELECT * from Movies''')
+cursor.execute("SELECT * from Movies where Actor='Surya'")
 result = cursor.fetchall();
 print(result)
 connection.commit()
